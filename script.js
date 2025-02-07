@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Remove heart after animation ends
         setTimeout(() => {
             heart.remove();
-        }, 5000);
+        }, 10000);
     }
 
     // Generate hearts continuously
