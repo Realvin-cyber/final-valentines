@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button id="yes-btn">✅ Yes</button>
+            <button id="no-btn">❌ No</button>
+        </div>
+        <div id="message" class="hidden">
+            <p>Yay! You made my day! ❤️</p>
+            <a href="https://www.facebook.com/profile.php?id=100008498010295" id="message-btn">💬 Message Me</a>
+           
+        </div>
+        <div id="no-response" class="hidden">
+            <p id="no-message"></p>
+            <img id="no-gif" src="" alt="Random Gif">
+        </div>
+    </div>
+    <canvas id="confetti" class="hidden"></canvas>
+    <audio id="bg-music" src="music.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

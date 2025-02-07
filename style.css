@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff4d4d;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+#message-btn {
+    text-decoration: none;
+    background-color: #ff69b4; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#message-btn:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#no-response img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+@keyframes float-hearts {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.heart {
+    position: fixed;
+    color: red;
+    font-size: 2rem;
+    animation: float-hearts 4s linear infinite;
+}
