@@ -1,3 +1,26 @@
+document.addEventListener('DOMContentLoaded', function() {
+    function createHeart() {
+        const heart = document.createElement('div'); // Use 'div' instead of 'container'
+        heart.className = 'heart';
+        heart.innerHTML = '❤️'; // Heart emoji
+
+        // Randomize position, size, and animation duration
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = Math.random() * (30 - 10) + 10 + 'px';
+        heart.style.animationDuration = Math.random() * (5 - 2) + 2 + 's';
+
+        document.getElementById('heart-container').appendChild(heart);
+
+        // Remove heart after animation ends
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    // Generate hearts continuously
+    setInterval(createHeart, 200);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const yesBtn = document.getElementById("yes-btn");
     const noBtn = document.getElementById("no-btn");
